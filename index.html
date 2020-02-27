@@ -1,1 +1,30 @@
+<!Doctype HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>liquid layout</title>
+<style>
+  /* This is a comment it is not read by any browser
+  This is where the css styling goes */
 
+          body{
+                   color:#000;
+                   background-color:#fff;
+                   width:100%; /*The body is naturally a 100% of the browser window space, but let us just write it to make sure */
+          }
+
+           #container{
+                  /*Styling for any element with the id="container" */
+                         width:92%; /* The width is liquid by screen-percentage*/
+                         height:80%; /* The height is liquid by screen-percentage*/
+                         color:#fff;
+                         background-color:red;
+            }
+          </style>
+     </head>
+     <body>
+          <div id="container">
+                 <p id="content"> I am a liquid layout. As you can see regardless of what screen-resolution size you look at me in, I will always fit. In other words, you will aalways see the white body and the entire red-container. You could only see this in the fixed layout if the screen-resolution or browser-window was big enough.</p>
+          </div>
+     </body>
+</html>
